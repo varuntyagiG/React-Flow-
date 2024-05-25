@@ -1,13 +1,14 @@
-import { Product } from "./product"
+import { Product } from "./product";
 
-function ProductTab(){
-    return ( 
+function ProductTab() {
+  let feature = [<li>"good"</li>, <li>"reliable"</li>, <li>"hi-tech"</li>];
+  return (
     <>
-    <Product/>
-    <Product/>
-    <Product/>
-  </>
-    )
+      <Product title="phone" price={35000} feature={feature} />
+      <Product title="laptop" price={70000} />
+      <Product title="car" price={1200000} />
+    </>
+  );
 }
 
-export {ProductTab}
+export { ProductTab };
